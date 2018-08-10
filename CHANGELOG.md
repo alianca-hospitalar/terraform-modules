@@ -2,4 +2,4 @@
 
 FIRST TAG:
 
-* Tag for s3 and cloudfront-s3.
+* Tag for s3, cloudfront-s3 and dynamodb.
