@@ -7,7 +7,6 @@ resource "aws_s3_bucket" "s3_bucket" {
 
   force_destroy = true
   
-  policy = "${file("${var.s3_policy}")}"
   tags {
         Name = "${var.name}"
         Environment = "${var.env}"
