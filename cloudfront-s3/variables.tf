@@ -9,7 +9,7 @@ variable "key_name" {}
 variable "account_id" {}
 variable "cf_aliases" {
         type = "list"
-        default = [""]
+        default = []
 }
 variable "domain" {
 		default = ""
