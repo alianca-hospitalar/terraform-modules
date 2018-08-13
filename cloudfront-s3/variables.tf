@@ -15,6 +15,10 @@ variable "domain" {
 		default = ""
 }
 
+variable "s3_acl" {
+        default = "public-read"
+}
+
 variable routing_rules {
     default = ""
 }

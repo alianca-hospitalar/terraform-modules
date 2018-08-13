@@ -1,6 +1,6 @@
 resource "aws_s3_bucket" "s3_bucket" {
     bucket = "static-${var.name}-${var.env}"
-    acl = "private"
+    acl = "${var.s3_acl}"
     lifecycle {
       prevent_destroy = false
     }
