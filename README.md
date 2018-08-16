@@ -1,6 +1,6 @@
-# README #
+# terraform-modules #
 
-Repository for Terraform modules
+This is the repository for Terraform modules used in some Aliança Hospitalar systems.
 
 ### Reference ###
 
@@ -37,6 +37,5 @@ or
 terraform get -update
 ```
 
-
-Ps. 
+Ps.
 * Each folder is a module
