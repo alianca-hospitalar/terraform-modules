@@ -68,4 +68,9 @@ resource "aws_cloudfront_distribution" "cloudfront_distribution" {
     minimum_protocol_version = "${var.cf_minimum_protocol_version}"
     ssl_support_method = "${var.cf_ssl_support_method}"
   }
+
+  tags {
+      Environment = "${var.environment}"
+      System = "${var.system}"
+    }
 }
