@@ -8,4 +8,9 @@ resource "aws_dynamodb_table" "dynamodb_table" {
     name = "${var.attribute_name}"
     type = "${var.attribute_type}"
   }
+
+  tags {
+    Environment = "${var.environment}"
+    System = "${var.system}"
+  }
 }

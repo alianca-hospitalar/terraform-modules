@@ -11,6 +11,11 @@ resource "aws_lambda_function" "lambda_function" {
   environment {
     variables = "${var.environment_variables}"
   }
+
+  tags {
+    Environment = "${var.environment}"
+    System = "${var.system}"
+  }
 }
 
 resource "aws_lambda_permission" "lambda_function_permission" {

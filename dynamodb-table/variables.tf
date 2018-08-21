@@ -13,13 +13,16 @@ variable "system" {
   description = "Name of the system that owns this resources"
 }
 
-/***** S3 variables *****/
-
+/***** DynamoDB table variables *****/
 variable "name" {}
 variable "type" {}
-variable "env" {}
 variable "team" {}
 variable "account_id" {}
-variable "s3_bucket_name" {}
-variable "s3_acl" {}
-variable "s3_versioning" {}
+variable "domain" {
+		default = ""
+}
+variable "dynamodb_read_capacity" {}
+variable "dynamodb_write_capacity" {}
+variable "dynamodb_hash_key" {}
+variable "attribute_name" {}
+variable "attribute_type" {}
